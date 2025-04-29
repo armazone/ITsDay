@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT's Day 2025</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            glass: 'rgba(255, 255, 255, 0.15)',
+          },
+          dropShadow: {
+            glow: '0 0 12px rgba(99,102,241,0.7)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-white scroll-smooth relative z-10">
+
+  <!-- Navbar -->
+  <header class="bg-gray-950/70 backdrop-blur-md fixed top-0 left-0 w-full z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-400 drop-shadow-glow">IT's Day</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#tentang" 
+        class="hover:text-indigo-400 transition drop-shadow-glow">
+        Tentang
+        </a>
+        <a href="#jadwal" 
+        class="hover:text-indigo-400 transition drop-shadow-glow">
+        Jadwal</a>
+        <a href="#kontak" 
+        class="hover:text-indigo-400 transition drop-shadow-glow">
+        Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center text-center pt-20 bg-gradient-to-br from-indigo-700 via-purple-800 to-black" id="home">
+    <div data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-glow">Selamat Datang di IT's Day 2025</h2>
+      <p class="mb-6 text-white/80">Workshop • Lomba • IT Exhibition</p>
+      <a href="https://forms.gle/contohFormPendaftaran" target="_blank" 
+         class="bg-white text-indigo-700 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-indigo-100 transition drop-shadow-glow">
+        Daftar Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Tentang Acara -->
+  <section id="tentang" class="py-24" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-glass backdrop-blur-md rounded-xl p-8 border border-white/20 shadow-lg" style="background-color: rgba(255, 255, 255, 0.1);">
+        <h3 class="text-3xl font-semibold mb-4 text-white drop-shadow-glow">Tentang IT's Day</h3>
+        <p class="text-white/80">
+          IT's Day adalah acara tahunan yang diselenggarakan oleh Himpunan Mahasiswa Teknik Informatika, menghadirkan berbagai kegiatan menarik seperti workshop, lomba, dan pameran teknologi terkini.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jadwal & Rundown -->
+  <section id="jadwal" class="py-24 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-8 drop-shadow-glow">Jadwal Kegiatan</h3>
+      <ul class="space-y-4">
+        <li class="bg-glass backdrop-blur-md p-4 rounded-xl border border-white/10" style="background-color: rgba(255, 255, 255, 0.08);">📅 10 Mei - Workshop Web Development</li>
+        <li class="bg-glass backdrop-blur-md p-4 rounded-xl border border-white/10" style="background-color: rgba(255, 255, 255, 0.08);">📅 11 Mei - Lomba UI/UX Design</li>
+        <li class="bg-glass backdrop-blur-md p-4 rounded-xl border border-white/10" style="background-color: rgba(255, 255, 255, 0.08);">📅 12 Mei - Pameran dan Penutupan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Kontak & Sponsor -->
+  <section id="kontak" class="py-24" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4 drop-shadow-glow">Kontak & Sponsor</h3>
+      <p class="text-white/80 mb-6">Hubungi kami melalui Instagram <strong>@itsday2025</strong> atau email ke <strong>itsday@himpunan.ac.id</strong></p>
+      <div class="flex justify-center gap-8 mt-8">
+        <img src="assets/logo-sponsor1.png" alt="Sponsor 1" class="h-12" />
+        <img src="assets/logo-sponsor2.png" alt="Sponsor 2" class="h-12" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-950 text-white text-sm">
+    © 2025 IT's Day. All rights reserved.
+  </footer>
+
+  <!-- Animate on Scroll -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
